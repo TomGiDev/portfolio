@@ -1,8 +1,11 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-dark">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/work">Work</router-link> |
+      <router-link to="/knowledge">Knowledge</router-link> |
+      <router-link to="/contact">Contact</router-link>
     </div>
     <router-view/>
   </div>
@@ -13,20 +16,24 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: 0px;
   text-align: center;
-  color: #2c3e50;
+  color: #7ba5cf;
 }
 
 #nav {
-  padding: 30px;
+  padding: 20px;
+  border-bottom: thin solid #e2b129;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  font-size: 20px;
+  color: #7ba5cf;
+  margin: 0px 20px;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #e2b129;
 }
 </style>

@@ -1,18 +1,34 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container fluid class="p-4 bg-dark">
+      <b-row>
+        <b-col>
+          <Homepart msg="Welcome to my portfolio :"/>
+        </b-col>
+        <b-col>
+          <b-img center :src="require('../assets/profil.jpg')"></b-img>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import Homepart from '@/components/Homepart.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Homepart
   }
 }
 </script>
+
+<style>
+img {
+	width: 50%;
+	
+}
+
+</style>
