@@ -2,10 +2,11 @@
   <div class="home">
     <b-container fluid class="p-4 bg-dark">
       <b-row>
-        <b-col>
+        <b-col cols="1"></b-col>
+        <b-col cols="5">
           <Homepart msg="Welcome to my portfolio :"/>
         </b-col>
-        <b-col>
+        <b-col cols="5">
           <b-img center :src="require('../assets/profil.jpg')"></b-img>
         </b-col>
       </b-row>

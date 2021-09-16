@@ -23,7 +23,7 @@
 
 #nav {
   padding: 20px;
-  border-bottom: thin solid #e2b129;
+  border-bottom: thin solid #e28229;
 }
 
 #nav a {
@@ -34,6 +34,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #e2b129;
+  color: #e28229;
 }
 </style>
