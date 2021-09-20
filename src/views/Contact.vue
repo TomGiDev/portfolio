@@ -1,9 +1,8 @@
 <template>
   <b-container class="contact p-4" >
-    
     <b-col cols="6">
     <h1>Let's talk !</h1>
-    <h4>Get in touch via the form below, or by emailing <a href="mailto:thomas.girardet@orange.fr?subject=Hello !" class="link">hello@TomGiDev</a></h4>
+    <h4>Get in touch via the form below, or by emailing me : <a href="mailto:thomas.girardet@orange.fr?subject=Hello !" class="link">hello@TomGiDev</a></h4>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
       <b-form-group
         id="input-group-1"
@@ -14,8 +13,7 @@
         <b-form-input
           id="input-1"
           class="input-form"
-          v-model="form.email"
-          name="email"
+          v-model="email"
           type="email"
           placeholder="Enter your email"
           required
@@ -32,7 +30,7 @@
         <b-form-input
           id="input-2"
           class="input-form"
-          v-model="form.name"
+          v-model="name"
           placeholder="Enter your name"
           required
         ></b-form-input>
@@ -48,7 +46,7 @@
         <b-form-textarea
           id="input-3"
           class="input-form"
-          v-model="form.message"
+          v-model="message"
           placeholder="Enter your message"
           required
           rows="5"
@@ -75,14 +73,12 @@
   export default {
     data() {
       return {
-        form: {
-          email: '',
-          name: '',
-          message: '',
-        },
-        alert1:'Mail invalid',
-        alert2:'Name invalid',
-        alert3:'Message invalid',
+        email: '',
+        name: '',
+        message: '',
+        alert1:'',
+        alert2:'',
+        alert3:'',
         valid1:false,
         valid2:false,
         valid3:false,
@@ -91,43 +87,63 @@
     },
     watch: {
       email() {
-        if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(this.form.email)) {
+        if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/.test(this.email)) {
           this.valid1= true;
-          this.alert1= 'Valid email'
+          this.alert1= 'Valid email';
+        } else {
+          this.valid1= false;
+          this.alert1= 'Please, enter valid email !';
         }
+      },
+      name() {
+        if (this.name.length >=2 && /[a-zA-Z]/.test(this.name)) {
+          this.valid2= true;
+          this.alert2= 'Valid name';
+        } else {
+          this.valid2= false;
+          this.alert2= 'Please, enter valid name !';
+        }
+      },
+      message() {
+        if (this.message.length >=10 ) {
+          this.valid3= true;
+          this.alert3= 'Thanks for your message :)';
+        } else {
+          this.valid3= false;
+          this.alert3= 'Please, write me a message to contact you back.';
+        }  
       }
     },
     computed: {
       getColor1() {
         if (this.valid1) {
-          return 'color:green'
+          return 'color:green';
         }
-        return 'color:darkred'
+        return 'color:darkred';
       },
       getColor2() {
         if (this.valid2) {
-          return 'color:green'
+          return 'color:green';
         }
-        return 'color:darkred'
+        return 'color:darkred';
       },
       getColor3() {
         if (this.valid3) {
-          return 'color:green'
+          return 'color:green';
         }
-        return 'color:darkred'
+        return 'color:darkred';
       },
     },
     methods: {
       onSubmit(event) {
         event.preventDefault()
-        alert(JSON.stringify(this.form))
       },
       onReset(event) {
         event.preventDefault()
         // Reset our form values
-        this.form.email = ''
-        this.form.name = ''
-        this.form.message = ''
+        this.email = ''
+        this.name = ''
+        this.message = ''
         // Trick to reset/clear native browser form validation state
         this.show = false
         this.$nextTick(() => {
@@ -161,6 +177,10 @@ label {
 }
 
 h1, h4 {
+  text-align: center;
+}
+
+label#input-group-1__BV_label_.d-block, label#input-group-2__BV_label_.d-block, label#input-group-3__BV_label_.d-block {
   text-align: left;
 }
 

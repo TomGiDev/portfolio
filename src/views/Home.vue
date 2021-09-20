@@ -4,7 +4,8 @@
       <b-row>
         <b-col cols="1"></b-col>
         <b-col cols="5">
-          <Homepart msg="Welcome to my portfolio :"/>
+          <h1>title-home-h1</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed modi animi beatae accusamus corporis facere illo sequi minima molestias error facilis, natus architecto, voluptas harum quam vel sint libero quo.</p>
         </b-col>
         <b-col cols="5">
           <b-img center :src="require('../assets/profil.jpg')"></b-img>
@@ -16,20 +17,20 @@
 
 <script>
 
-import Homepart from '@/components/Homepart.vue'
 
 export default {
   name: 'Home',
-  components: {
-    Homepart
-  }
+  components: {}
 }
 </script>
 
 <style>
 img {
 	width: 50%;
-	
+}
+
+p {
+  font-size: 25px;
 }
 
 </style>
