@@ -1,14 +1,19 @@
 <template>
   <div id="app" class="bg-dark">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/work">Work</router-link> |
-      <router-link to="/contact">Contact</router-link>
-    </div>
+      <top-navbar></top-navbar>
     <router-view/>
   </div>
 </template>
+
+<script>
+import TopNavbar from "@/components/TopNavbar.vue";
+
+  export default {
+    components: {
+      "top-navbar": TopNavbar
+    }
+  }
+</script>
 
 <style>
 #app {
