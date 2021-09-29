@@ -1,13 +1,13 @@
 <template>
   <b-container class="contact p-4" >
     <b-col cols="6">
-    <h1>Let's talk !</h1>
-    <h4>Get in touch via the form below, or by emailing me : <a href="mailto:thomas.girardet@orange.fr?subject=Hey Thomas !" class="link">hello@TomGiDev</a></h4>
+    <h1>{{ $t('titleContactH1') }}</h1>
+    <h4>{{ $t('titleContactH4') }} <a href="mailto:thomas.girardet@orange.fr?subject=Hey Thomas !" class="link">hello@TomGiDev</a></h4>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
       <b-form-group
         id="input-group-1"
         class="p-2 mb-1"
-        label="Email address :"
+        label="Email address : a remplacer par une balise <p></p> ou equivalent boostrap vue"
         label-for="input-1"
       >
         <b-form-input
@@ -58,10 +58,10 @@
       <b-row>
         <b-col cols="3"></b-col>
         <b-col cols="3">
-          <b-button type="submit" class="buton m-2" variant="light">Submit</b-button>
+          <b-button type="submit" class="buton m-2" variant="light">{{ $t('buttonContactSubmit') }}</b-button>
         </b-col>
         <b-col cols="3">
-          <b-button type="reset" class="buton m-2" variant="secondary">Reset</b-button>
+          <b-button type="reset" class="buton m-2" variant="secondary">{{ $t('buttonContactReset') }}</b-button>
         </b-col>
       </b-row>      
     </b-form>

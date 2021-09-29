@@ -5,7 +5,7 @@
         <b-col cols="1"></b-col>
         <b-col cols="5">
           <h1>{{ $t('titleHomeH1') }}</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed modi animi beatae accusamus corporis facere illo sequi minima molestias error facilis, natus architecto, voluptas harum quam vel sint libero quo.</p>
+          <p>{{ $t('textHome') }}</p>
         </b-col>
         <b-col cols="5">
           <b-img center :src="require('../assets/profil.jpg')"></b-img>

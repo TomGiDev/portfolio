@@ -13,10 +13,10 @@ const messages = {
       // Components
       titleHomeH1:'Salut, je suis Thomas.',
       textHome:'Je suis un jeune développeur senior mais junior ;)',
-      titleAboutH1: 'Je crée de la valeur par la conception et, par la prise en compte de l\'experience utilisateur',
+      titleAboutH1: 'Je crée de la valeur par la conception et, par la prise en compte de l\'experience utilisateur.',
       textAbout:'',
       titleWorkH1: 'Version 1 de mon cv :',
-      textWork1: '',
+      textWork1: 'Après ma toute première formation à l\'ENI, je me suis amusé à créer ce CV en html 5, CSS 3 et en javascript pour ajouter un peu de dynamisme et de mouvement. Les couleurs ne sont pas ce qu/il y a de mieux mais, c\'est fonctionnel.',
       linkWork1:'Un coup d\'oeil ?',
       titleContactH1:'On échange ?',
       titleContactH4:'Contactez-moi via le formulaire ci-dessous, ou en m\'écrivant :',
@@ -24,8 +24,8 @@ const messages = {
       nameContact:'Nom :',
       emailContact:'Mail :',
       messageContact:'Message :',
-      buttonContactReset:'Reset',
-      buttonContactSubmit:'Submit'
+      buttonContactReset:'Annuler',
+      buttonContactSubmit:'Envoyer'
       
   },
   'en': {
@@ -37,7 +37,7 @@ const messages = {
       // Components
       titleHomeH1:'Hi, I\'m Thomas',
       textHome:'',
-      titleAboutH1: 'I create value by design and, by taking into account the user experience',
+      titleAboutH1: 'I create value by design and, by taking into account the user experience.',
       textAbout:'',
       titleWorkH1: 'Version 1 of my cvm',
       textWork1: '',
@@ -48,8 +48,8 @@ const messages = {
       nameContact:'Name :',
       emailContact:'Email address :',
       messageContact:'Message :',
-      buttonContactReset:'Annuler',
-      buttonContactSubmit:'Envoyer'
+      buttonContactReset:'Reset',
+      buttonContactSubmit:'Submit'
   }
 };
 
