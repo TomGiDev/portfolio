@@ -2,7 +2,7 @@
   <b-container class="contact p-4" >
     <b-col cols="6">
     <h1>Let's talk !</h1>
-    <h4>Get in touch via the form below, or by emailing me : <a href="mailto:thomas.girardet@orange.fr?subject=Hello !" class="link">hello@TomGiDev</a></h4>
+    <h4>Get in touch via the form below, or by emailing me : <a href="mailto:thomas.girardet@orange.fr?subject=Hey Thomas !" class="link">hello@TomGiDev</a></h4>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
       <b-form-group
         id="input-group-1"
