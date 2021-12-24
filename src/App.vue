@@ -16,6 +16,7 @@ import TopNavbar from "@/components/TopNavbar.vue";
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +24,7 @@ import TopNavbar from "@/components/TopNavbar.vue";
   margin-top: 0px;
   text-align: center;
   color: #7ba5cf;
+  background-color: grayscale;
 }
 
 #nav {

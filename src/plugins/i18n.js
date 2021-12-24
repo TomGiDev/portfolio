@@ -12,7 +12,9 @@ const messages = {
       navContact: 'Contact',
       // Components
       titleHomeH1:'Salut, je suis Thomas.',
-      textHome:'Je suis un jeune développeur senior mais junior ;)',
+      textHomeP1:'Je suis un jeune développeur senior mais junior ;)',
+      textHomeP2:'J\'ai entamé ma reconversion en juin 2019 pour me tourner vers le développement web via la formation de l\'ENI. Depuis lors, j\'ai pu monter en compétence à l\'aide de tutoriels/formations disponibles sur le web.',
+      textHomeP3:'Aujourd\'hui, je me suis tourné vers le front-end et l\'expérience utilisateur en me concentrant sur le framework vue.js 2.',
       titleAboutH1: 'Je crée de la valeur par la conception et, par la prise en compte de l\'experience utilisateur.',
       textAbout:'',
       titleWorkH1: 'Version 1 de mon cv :',
@@ -36,7 +38,9 @@ const messages = {
       navContact: 'Contact',
       // Components
       titleHomeH1:'Hi, I\'m Thomas',
-      textHome:'',
+      textHomeP1:'I am a young senior developer but junior ;)',
+      textHomeP2: 'I started my retraining in June 2019 to turn to web development via the ENI training. Since then, I have been able to improve my skills with the help of tutorials / training available on the web.',
+      textHomeP3: 'Today I turned to the front-end and user experience focusing on the vue.js 2 framework.',
       titleAboutH1: 'I create value by design and, by taking into account the user experience.',
       textAbout:'',
       titleWorkH1: 'Version 1 of my cvm',

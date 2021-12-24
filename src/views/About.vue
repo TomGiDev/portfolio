@@ -1,10 +1,9 @@
 <template>
   <div class="about">
     <b-container fluid class="p-4 bg-dark">
-      <b-row>
-        <b-col cols="1"></b-col>
-        <b-col cols="5">
-          <h1>{{ $t('titleAboutH1') }}</h1>
+      <b-row align-v="center" cols="1" cols-sm="2">
+        <b-col cols="7">
+          <h3>{{ $t('titleAboutH1') }}</h3>
           <p>{{ $t('textAbout') }}</p>
         </b-col>
         <b-col cols="5">
@@ -33,4 +32,7 @@ p {
   font-size: 25px;
 }
 
+h4 {
+  font-weight: bold;
+}
 </style>

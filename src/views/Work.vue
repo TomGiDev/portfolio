@@ -1,15 +1,15 @@
 <template>
   <div class="about">
     <b-container fluid class="p-4 bg-dark">
-      <b-row>
-        <b-col cols="1"></b-col>
-        <b-col cols="10">
-          <h1>{{ $t('titleWorkH1') }}</h1>
+      <b-row align-v="center" cols="1">
+        <b-col>
+          <h2>{{ $t('titleWorkH1') }}</h2>
           <b-card 
             :img-src="require('@/assets/cv-html.png')"
             img-alt="Card image" 
             img-left class="p-2" 
             border-variant="grey"
+            padding="5px"
           >
             <b-card-text>
               {{ $t('textWork1') }}
@@ -21,3 +21,19 @@
     </b-container>
   </div>
 </template>
+
+<style>
+
+.card-link {
+  font-weight: bold;
+}
+
+.card-img-left {
+  width: 40%;
+}
+
+h2 {
+  padding: 10px;
+}
+
+</style>

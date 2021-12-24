@@ -155,10 +155,6 @@
 </script>
 
 <style>
-.input-form {
-  background-color:#777777
-}
-
 .buton {
   width: 80px;
 }
