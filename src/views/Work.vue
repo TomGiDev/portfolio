@@ -22,6 +22,12 @@
   </div>
 </template>
 
+<script>
+  export default {
+    name: 'Work'
+  }
+</script>
+
 <style>
 
 .card-link {
