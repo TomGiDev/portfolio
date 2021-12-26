@@ -1,5 +1,14 @@
 <template>
   <div class="about">
+    <div>
+      <b-button v-b-modal.modal-center>Project 1</b-button>
+
+      <b-modal id="modal-center" centered title="BootstrapVue">
+        <p class="my-4">Vertically centered modal!</p>
+      </b-modal>
+    </div>
+
+
     <b-container fluid class="p-4 bg-dark">
       <b-row align-v="center" cols="1">
         <b-col>
